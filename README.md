@@ -4,8 +4,8 @@
 **To achive this we have to combine 3 necessory elements:**
 ```
 
-Hybrid ReAct Loop
-Sofisticated Agentic AI System
-Plan and Execute Workflow
+- Hybrid ReAct Loop
+- Sofisticated Agentic AI System
+- Plan and Execute Workflow
 
 ```
