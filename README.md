@@ -10,3 +10,7 @@
 
 ```
 ---
+
+### 1. Hybrid ReAct Loop
+### 2. Sophisticated Agentic AI System
+### 3. Plan and Execute Workflow
