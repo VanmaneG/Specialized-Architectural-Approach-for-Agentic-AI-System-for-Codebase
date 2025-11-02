@@ -5,7 +5,8 @@
 ```
 
 - Hybrid ReAct Loop
-- Sofisticated Agentic AI System
+- Sophisticated Agentic AI System
 - Plan and Execute Workflow
 
 ```
+---
