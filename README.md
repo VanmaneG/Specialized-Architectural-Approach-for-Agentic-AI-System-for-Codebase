@@ -12,5 +12,8 @@
 ---
 
 ### 1. Hybrid ReAct Loop
+Here we much employe Hybrid agent architecture which uses Reasoning and Action (ReAct) framework. This is essential because the there are 2 tasks requires alternating between:
+ - high-level intellectual work (comparing specs, generating code logic)
+ - low-level execution (editing files, running tests)
 ### 2. Sophisticated Agentic AI System
 ### 3. Plan and Execute Workflow
