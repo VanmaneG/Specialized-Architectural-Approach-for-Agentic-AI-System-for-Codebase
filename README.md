@@ -38,6 +38,8 @@ Implementing a new feature without breaking old ones is a task of constraint sat
 > Branch 2 (Alternative): "I will implement the new functionality by using the original V_1 and writing a new wrapper function V_1_New for the new spec." (Proceed to test and observe).
 
 - Constraint Evaluation: This branching mechanism enables the agent to evaluate the code changes against the constraints (the existing test suite for the old spec) and backtrack if a path results in a failure
+> [!NOTE]
+> our agent's Thought steps (CoT/ToT) are explicitly logged. This transparency is vital for debugging a complex code-transformation process
 ### 3. Plan-and-Execute Workflow
 To maximize efficiency and reduce reliance on expensive LLM calls, our agent’s loop should follow a Plan-and-Execute architecture :   
 
