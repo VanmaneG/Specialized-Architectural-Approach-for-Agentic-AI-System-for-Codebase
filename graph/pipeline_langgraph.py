@@ -1,6 +1,7 @@
 from langgraph.graph import StateGraph, END
 from graph.graph_state import GraphState
 
+# Using All agents 
 from agents.context_synthesizer import ContextSynthesizer
 from agents.goal_retriever import GoalRetriever
 from agents.planner_agent import PlannerAgent
@@ -76,6 +77,7 @@ def build_graph():
     builder.add_edge("tot", "executor")
     builder.add_edge("executor", "eval")
     builder.add_edge("eval", "failure")
+    
     # nodes
     builder.add_node("context_rag", lambda s: ctx_rag.run(s))
     # then planner, react, tot, executor, eval, failure...
