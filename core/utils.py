@@ -1,5 +1,7 @@
 import os
-
+    """
+    Reading files
+    """
 def read_text_file(path):
     if not os.path.exists(path):
         return ""
