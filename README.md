@@ -56,12 +56,3 @@ To maximize efficiency and reduce reliance on expensive LLM calls, our agent’s
 
 
 ---
-
-
-## Project Structure
-agentic_spec_to_code/
-├── main.py
-├── graph
-├── agents
-├── core
-├── data
