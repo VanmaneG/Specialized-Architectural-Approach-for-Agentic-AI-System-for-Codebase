@@ -14,6 +14,7 @@ from agents.report_agent import ReportAgent
 # Instantiate agents
 ctx = ContextSynthesizer()
 diff = GoalRetriever()
+ctx_rag = ContextCuratorRAG()
 planner = PlannerAgent()
 react = ReActAgent()
 tot = TreeOfThoughtAgent()
@@ -21,6 +22,7 @@ executor = ExecutorAgent()
 evaluator = EvaluatorAgent()
 failure = FailureDetector()
 report = ReportAgent()
+
 
 # Node functions
 def node_context(state: GraphState) -> GraphState:
@@ -74,6 +76,10 @@ def build_graph():
     builder.add_edge("tot", "executor")
     builder.add_edge("executor", "eval")
     builder.add_edge("eval", "failure")
+    # nodes
+    builder.add_node("context_rag", lambda s: ctx_rag.run(s))
+    # then planner, react, tot, executor, eval, failure...
+    builder.add_edge("context_rag", "planner")
 
     # Conditional edge: loop back if replanning is needed
     builder.add_conditional_edges(
@@ -83,3 +89,13 @@ def build_graph():
 
     builder.add_edge("report", END)
     return builder.compile()
+from agents.context_curator_rag import ContextCuratorRAG
+from agents.llm_reasoner import LLMReasoner
+from agents.planner_agent import PlannerAgent  # uses LLMReasoner internally
+from agents.reaction_agent import ReActAgent  # your ReAct using LLMReasoner
+# ... other imports
+
+# instantiate
+
+# ... rest
+
