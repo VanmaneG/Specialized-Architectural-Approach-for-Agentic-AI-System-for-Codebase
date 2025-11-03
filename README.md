@@ -48,3 +48,9 @@ To maximize efficiency and reduce reliance on expensive LLM calls, our agent’s
  - Example Plan Step: "Locate V_1 implementation in utils.c." "Generate V_1_B_test.py based on new Spec requirements." "Call Executor to run V_1_B_test.py.".   
 
 **Executor(s) (Runtimes/Tools)**: The we can have individual steps handed off to cheaper, faster execution runtimes (tools for code editing, testing, file management). The LLM is only recalled if the plan fails or if a complex re-planning is required.
+
+
+## High Level Design 
+
+<img width="1239" height="577" alt="Screenshot 2025-11-03 at 1 50 49 PM" src="https://github.com/user-attachments/assets/ccf9a3de-5778-4757-9961-b6afd07664de" />
+
