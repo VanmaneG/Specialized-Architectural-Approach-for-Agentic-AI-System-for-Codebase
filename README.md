@@ -53,11 +53,15 @@ To maximize efficiency and reduce reliance on expensive LLM calls, our agent’s
 ## High Level Design 
 
 <img width="1239" height="577" alt="Screenshot 2025-11-03 at 1 50 49 PM" src="https://github.com/user-attachments/assets/ccf9a3de-5778-4757-9961-b6afd07664de" />
+
+
 ---
+
+
 ## Project Structure
->agentic_spec_to_code/
->├── main.py
->├── graph
->├── agents
->├── core
->├── data
+> agentic_spec_to_code/
+> ├── main.py
+> ├── graph
+> ├── agents
+> ├── core
+> ├── data
